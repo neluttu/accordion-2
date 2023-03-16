@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat - iCodeThis.com</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet" media="all" type="text/css">
+    </head>
+    <body>
+        <div id="main">
+            <div class="content">
+                <h1>The Barebones Of An Accordion</h1>
+                <h2>Highlighting important details of a section and revealing more details upon a tap or click, if necessary.</h2>
+                <details>
+                    <summary>What is an accordion?</summary>
+                    <p>The accordion is a graphical control element comprising a vertically stacked list of items, suck as labels or thumbnails. An accordion is similar in purpose to a tabbed interface, a list of items where exactly one item is opened into a panel.</p>
+                    <button>Read more</button>
+                </details>
+                <details>
+                    <summary>What if the user clicks on a collapsed card while another card is open?</summary>
+                    <p>
+                        If a user clicks on a collapsed card while another card is open in an accordion, there are several ways to handle this interaction. Here are a few possible options:<br><br>
+
+                        Close the currently open card: If the user clicks on a collapsed card while another card is open, you can choose to close the open card and expand the one the user clicked on. This ensures that only one card is open at a time, which can help prevent clutter and confusion.
+                    </p>
+                    <button>Read more</button>
+                </details>
+                  
+                <details>
+                    <summary>How to choose an icon to indicate the expansion?</summary>
+                    <p>When choosing an icon to indicate expansion in an accordion, you want to choose an icon that is clear and easy to understand. Here are a few tips to keep in mind:<br><br>
+
+                    Use a plus/minus icon: One of the most common icons used to indicate expansion is a plus or minus icon. A plus icon typically indicates that the content can be expanded, while a minus icon indicates that the content is currently expanded and can be collapsed.</p>
+                    <button>Read more</button>
+                </details>
+                <script>
+                    const details = document.querySelectorAll("details");
+                        details.forEach((targetDetail) => {
+                        targetDetail.addEventListener("click", () => {
+                            details.forEach((detail) => {
+                            if (detail !== targetDetail) 
+                                detail.removeAttribute("open");
+                            });
+                        });
+                    });                    
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
