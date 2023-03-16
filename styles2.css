@@ -85,7 +85,6 @@ button:hover {
 }
 
 details {
-    border-bottom: 2px solid #CCC;
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -107,6 +106,7 @@ details:not(:last-of-type)
 {
     border-bottom: 2px solid #CCC;
 }
+
 summary {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cline x1='12' y1='5' x2='12' y2='19' /%3E%3Cline x1='5' y1='12' x2='19' y2='12' /%3E%3C/svg%3E");
     background-repeat: no-repeat;
